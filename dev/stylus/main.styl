@@ -1,0 +1,84 @@
+// Подключаем стили библиотек
+@import '_libs.styl'
+
+// Подключаем переменные
+// @import '_vars.styl'
+
+// Подключаем спрайты (просто раскоментируем импорт при появлении PNG спрайтов)
+// @import '_sprite.styl'
+
+// Подключаем миксины
+// @import '_mixins.styl'
+
+html 
+	box-sizing: border-box;
+  line-height 1
+  font-size 14px
+
+body
+  font-family mainFont
+
+a
+  text-decoration none
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+  vertical-align middle
+  
+textarea
+  resize none
+
+input,
+select,
+button
+  outline none
+
+*, *::before, *::after
+  box-sizing inherit
+  
+.hide
+  display none
+  
+.show
+  display block
+  
+.clearfix:before,
+.clearfix:after 
+  content " "
+  display table
+
+.clearfix:after 
+  clear both
+
+.clearfix 
+  *zoom 1
+
+span
+	display inline-block
+
+.container
+	width 100%
+	max-width 1180px
+	margin 0 auto	
+
+// Общие стили
+@import '_common_styles.styl'
+
+// Стили шапки
+@import 'modules/_header.styl'
+
+// Стили меню
+@import 'modules/_menu.styl'
+
+// Стили главной страницы
+@import 'page/_index.styl'
+
+// Стили футера
+@import 'modules/_footer.styl'
+
+// Стили медиазапросов
+@import '_media.styl'
